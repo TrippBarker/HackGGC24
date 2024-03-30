@@ -1,3 +1,9 @@
+To Run Project open project and run:
+```
+npm install
+npm run ng serve
+```
+
 Notes:
 
 Challenges (Project Due at 4PM):
