@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "GrizzlyHackathon": {
+    "grizzlyhackathon": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "GrizzlyHackathon:build:production"
+              "buildTarget": "grizzlyhackathon:build:production"
             },
             "development": {
-              "buildTarget": "GrizzlyHackathon:build:development"
+              "buildTarget": "grizzlyhackathon:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "GrizzlyHackathon:build"
+            "buildTarget": "grizzlyhackathon:build"
           }
         },
         "test": {
@@ -94,6 +94,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "grizzlyhackathon:build:production",
+              "serveTarget": "grizzlyhackathon:serve:production"
+            },
+            "development": {
+              "buildTarget": "grizzlyhackathon:build:development",
+              "serveTarget": "grizzlyhackathon:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
