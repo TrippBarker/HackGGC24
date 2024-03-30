@@ -7,7 +7,7 @@ import { RegisterComponent } from './register/register.component';
   standalone: true,
   imports: [RouterOutlet, RegisterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'GrizzlyHackathon';

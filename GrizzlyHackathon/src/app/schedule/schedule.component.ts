@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './schedule.component.html',
-  styleUrl: './schedule.component.scss'
+  styleUrl: './schedule.component.css'
 })
 export class ScheduleComponent {
 
