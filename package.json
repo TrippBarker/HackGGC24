@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@ng-bootstrap/ng-bootstrap": "^16.0.0-rc.2",
-    "firebase": "^10.10.0"
-  }
-}
