@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "grizzlyhackathon"
+  },
+  "targets": {
+    "grizzlyhackathon": {
+      "hosting": {
+        "grizzlyhackathon": [
+          "grizzlyhackathon"
+        ]
+      }
+    }
   }
 }

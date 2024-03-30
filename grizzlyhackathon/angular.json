@@ -98,6 +98,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "grizzlyhackathon:build:production",
+              "serveTarget": "grizzlyhackathon:serve:production"
+            },
+            "development": {
+              "buildTarget": "grizzlyhackathon:build:development",
+              "serveTarget": "grizzlyhackathon:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
